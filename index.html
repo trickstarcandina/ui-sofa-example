@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CASA — Nơi mọi mệt mỏi dừng lại sau cánh cửa</title>
+  <meta name="description" content="CASA — Thương hiệu sofa cao cấp Việt Nam. Thiết kế tối giản, chất liệu thượng hạng, tạo nên tâm điểm cho phòng khách của bạn.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🛋</text></svg>">
+</head>
+<body>
+
+  <!-- Loading Screen -->
+  <div class="loader" id="loader">
+    <div class="loader-logo">CASA</div>
+    <div class="loader-bar">
+      <div class="loader-bar-fill"></div>
+    </div>
+  </div>
+
+  <!-- Custom Cursor -->
+  <div class="custom-cursor" id="cursor"></div>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="container">
+      <a href="#" class="nav-logo">CASA</a>
+      <ul class="nav-links">
+        <li><a href="#collections">Bộ sưu tập</a></li>
+        <li><a href="#craftsmanship">Thủ công</a></li>
+        <li><a href="#lookbook">Lookbook</a></li>
+        <li><a href="#contact">Liên hệ</a></li>
+      </ul>
+      <a href="#cta" class="nav-cta">Khám phá</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="hero-bg" id="heroBg">
+      <img src="images/hero-sofa.png" alt="Phòng khách sang trọng với sofa CASA" loading="eager">
+    </div>
+    <div class="hero-overlay"></div>
+    <div class="container">
+      <div class="hero-content">
+        <span class="hero-label">Bộ sưu tập 2026</span>
+        <h1 class="hero-title">Nơi mọi mệt mỏi<br>dừng lại <em>sau cánh cửa</em></h1>
+        <p class="hero-desc">Mỗi chiếc sofa CASA là một tác phẩm — được tạo nên bởi bàn tay nghệ nhân, dành cho những khoảnh khắc bình yên của bạn.</p>
+        <div class="hero-actions">
+          <a href="#collections" class="btn-primary">
+            <span>Khám phá ngay</span>
+            <svg class="arrow" width="16" height="16" viewBox="0 0 16 16" fill="none">
+              <path d="M3 8h10m0 0L9 4m4 4L9 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+          <a href="#craftsmanship" class="btn-outline">
+            <span>Câu chuyện của chúng tôi</span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <span>Cuộn xuống</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- Featured Collections -->
+  <section class="collections" id="collections">
+    <div class="container">
+      <div class="collections-header reveal">
+        <span class="section-label">Bộ sưu tập tiêu biểu</span>
+        <h2 class="section-title">Tâm điểm của mọi cuộc trò chuyện</h2>
+        <p class="section-subtitle">Mỗi thiết kế là sự kết hợp hoàn hảo giữa thẩm mỹ đương đại và sự thoải mái vượt thời gian.</p>
+      </div>
+
+      <div class="collections-grid">
+        <!-- Card 1 -->
+        <div class="collection-card reveal reveal-delay-1" id="card-1">
+          <img class="collection-card-img" src="images/sofa-1.png" alt="Sofa Nordica L-Shape">
+          <div class="collection-card-overlay"></div>
+          <div class="collection-card-content">
+            <span class="collection-card-tag">Vải Velvet</span>
+            <h3 class="collection-card-name">Nordica L-Shape</h3>
+            <div class="collection-card-swatches">
+              <span class="swatch active" style="background:#4A4A4A" title="Charcoal"></span>
+              <span class="swatch" style="background:#8B7355" title="Mocha"></span>
+              <span class="swatch" style="background:#D4C5B2" title="Ivory"></span>
+            </div>
+            <span class="collection-card-price">Từ 28.900.000₫</span>
+            <div class="collection-card-action">
+              <span>Xem chi tiết</span>
+              <svg class="arrow-sm" width="14" height="14" viewBox="0 0 16 16" fill="none">
+                <path d="M3 8h10m0 0L9 4m4 4L9 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <p class="collection-card-proof">Đã có mặt tại 1.200 phòng khách Việt</p>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="collection-card reveal reveal-delay-2" id="card-2">
+          <img class="collection-card-img" src="images/sofa-2.png" alt="Sofa Milano 3-Seater">
+          <div class="collection-card-overlay"></div>
+          <div class="collection-card-content">
+            <span class="collection-card-tag">Da Bò Ý</span>
+            <h3 class="collection-card-name">Milano 3-Seater</h3>
+            <div class="collection-card-swatches">
+              <span class="swatch active" style="background:#C49356" title="Camel"></span>
+              <span class="swatch" style="background:#2C2520" title="Espresso"></span>
+              <span class="swatch" style="background:#8B4513" title="Cognac"></span>
+            </div>
+            <span class="collection-card-price">Từ 42.500.000₫</span>
+            <div class="collection-card-action">
+              <span>Xem chi tiết</span>
+              <svg class="arrow-sm" width="14" height="14" viewBox="0 0 16 16" fill="none">
+                <path d="M3 8h10m0 0L9 4m4 4L9 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <p class="collection-card-proof">Chống xước từ móng vuốt thú cưng</p>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="collection-card reveal reveal-delay-3" id="card-3">
+          <img class="collection-card-img" src="images/sofa-3.png" alt="Sofa Serene Curved">
+          <div class="collection-card-overlay"></div>
+          <div class="collection-card-content">
+            <span class="collection-card-tag">Vải Bouclé</span>
+            <h3 class="collection-card-name">Serene Curved</h3>
+            <div class="collection-card-swatches">
+              <span class="swatch active" style="background:#7D8B6A" title="Sage"></span>
+              <span class="swatch" style="background:#E8D5C0" title="Cream"></span>
+              <span class="swatch" style="background:#D4A0A0" title="Blush"></span>
+            </div>
+            <span class="collection-card-price">Từ 35.200.000₫</span>
+            <div class="collection-card-action">
+              <span>Xem chi tiết</span>
+              <svg class="arrow-sm" width="14" height="14" viewBox="0 0 16 16" fill="none">
+                <path d="M3 8h10m0 0L9 4m4 4L9 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <p class="collection-card-proof">Chịu được 20.000 lần ngồi</p>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="collection-card reveal reveal-delay-4" id="card-4">
+          <img class="collection-card-img" src="images/sofa-4.png" alt="Sofa Atlas Modular">
+          <div class="collection-card-overlay"></div>
+          <div class="collection-card-content">
+            <span class="collection-card-tag">Vải Velvet</span>
+            <h3 class="collection-card-name">Atlas Modular</h3>
+            <div class="collection-card-swatches">
+              <span class="swatch active" style="background:#1B2A4A" title="Navy"></span>
+              <span class="swatch" style="background:#4A4A4A" title="Anthracite"></span>
+              <span class="swatch" style="background:#6B4C3B" title="Walnut"></span>
+            </div>
+            <span class="collection-card-price">Từ 38.800.000₫</span>
+            <div class="collection-card-action">
+              <span>Xem chi tiết</span>
+              <svg class="arrow-sm" width="14" height="14" viewBox="0 0 16 16" fill="none">
+                <path d="M3 8h10m0 0L9 4m4 4L9 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <p class="collection-card-proof">Tùy chỉnh kích thước theo phòng</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Us / Promises -->
+  <section class="promises" id="promises">
+    <div class="container">
+      <div class="promises-inner">
+        <div class="promises-text reveal">
+          <span class="section-label">Cam kết của chúng tôi</span>
+          <h2 class="section-title">Không chỉ bán sofa.<br>Chúng tôi tạo nên <em>sự an tâm.</em></h2>
+          <p class="section-subtitle">Mỗi quyết định thiết kế, mỗi lần chọn chất liệu — tất cả đều xoay quanh một mục đích: để bạn yêu ngôi nhà của mình hơn.</p>
+
+          <div class="promises-stats">
+            <div class="stat-item">
+              <div class="stat-number" data-target="1200">0</div>
+              <div class="stat-label">Phòng khách Việt</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number" data-target="5">0</div>
+              <div class="stat-label">Năm bảo hành</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number" data-target="98">0</div>
+              <div class="stat-label">% Hài lòng</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="promises-list reveal reveal-delay-2">
+          <div class="promise-item">
+            <div class="promise-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+              </svg>
+            </div>
+            <h4 class="promise-title">Bảo hành 5 năm</h4>
+            <p class="promise-desc">Toàn bộ khung gỗ và hệ thống lò xo. Đổi mới nếu có lỗi từ sản xuất.</p>
+          </div>
+
+          <div class="promise-item">
+            <div class="promise-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 10h20"/>
+              </svg>
+            </div>
+            <h4 class="promise-title">Tùy chỉnh kích thước</h4>
+            <p class="promise-desc">Đo đạc tận nơi, điều chỉnh kích thước chính xác theo không gian phòng khách.</p>
+          </div>
+
+          <div class="promise-item">
+            <div class="promise-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M5 12h14"/><path d="M12 5l7 7-7 7"/>
+              </svg>
+            </div>
+            <h4 class="promise-title">Giao hàng tận phòng</h4>
+            <p class="promise-desc">Miễn phí lắp đặt, vận chuyển cẩn thận vào tận vị trí bạn muốn đặt.</p>
+          </div>
+
+          <div class="promise-item">
+            <div class="promise-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/>
+              </svg>
+            </div>
+            <h4 class="promise-title">Showroom trải nghiệm</h4>
+            <p class="promise-desc">Chạm, ngồi, cảm nhận trực tiếp trước khi quyết định. 2 showroom tại TP.HCM & Hà Nội.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Craftsmanship -->
+  <section class="craftsmanship" id="craftsmanship">
+    <div class="container">
+      <div class="craft-grid">
+        <div class="craft-image reveal">
+          <img src="images/craftsmanship.png" alt="Nghệ nhân đóng sofa thủ công">
+        </div>
+        <div class="craft-content reveal reveal-delay-2">
+          <span class="section-label">Nghệ thuật thủ công</span>
+          <h2 class="section-title">Từ bản vẽ phác thảo đến phòng khách của bạn</h2>
+          <p class="section-subtitle">Mỗi chiếc ghế trải qua 47 bước thủ công, 12 lần kiểm tra chất lượng, và sự tận tâm của nghệ nhân có hơn 20 năm kinh nghiệm.</p>
+
+          <div class="craft-features">
+            <div class="craft-feature">
+              <div class="craft-feature-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 3v18m-7-7l7 7 7-7"/>
+                </svg>
+              </div>
+              <div class="craft-feature-text">
+                <h4>Khung gỗ Sồi & Tần bì</h4>
+                <p>Nhập khẩu trực tiếp, sấy tự nhiên 45 ngày, chắc chắn thế hệ.</p>
+              </div>
+            </div>
+
+            <div class="craft-feature">
+              <div class="craft-feature-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/>
+                </svg>
+              </div>
+              <div class="craft-feature-text">
+                <h4>Mút D40 cao cấp 3 lớp</h4>
+                <p>Chịu được 20.000+ lần ngồi mà không bị lún, phục hồi 95% sau mỗi lần sử dụng.</p>
+              </div>
+            </div>
+
+            <div class="craft-feature">
+              <div class="craft-feature-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/>
+                </svg>
+              </div>
+              <div class="craft-feature-text">
+                <h4>Vải & Da thượng hạng</h4>
+                <p>Chống nước, chống bám bẩn, an toàn với thú cưng và trẻ nhỏ.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lookbook / Gallery -->
+  <section class="lookbook" id="lookbook">
+    <div class="container">
+      <div class="lookbook-header reveal">
+        <span class="section-label">Trong nhà khách hàng</span>
+        <h2 class="section-title">Không chỉ đẹp trên ảnh studio</h2>
+        <p class="section-subtitle">Những hình ảnh thực tế từ phòng khách của khách hàng — nơi sofa CASA thực sự "sống".</p>
+      </div>
+
+      <div class="lookbook-grid">
+        <div class="lookbook-item reveal reveal-delay-1">
+          <img src="images/gallery-1.png" alt="Phòng khách khách hàng với sofa kem">
+          <div class="lookbook-item-overlay">
+            <div class="lookbook-item-info">
+              <div class="lookbook-item-name">Minh Thu</div>
+              <div class="lookbook-item-location">Quận 2, TP.HCM</div>
+            </div>
+          </div>
+          <div class="lookbook-item-ig">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor"/>
+            </svg>
+          </div>
+        </div>
+
+        <div class="lookbook-item reveal reveal-delay-2">
+          <img src="images/gallery-2.png" alt="Căn hộ với sofa xám đậm">
+          <div class="lookbook-item-overlay">
+            <div class="lookbook-item-info">
+              <div class="lookbook-item-name">Gia đình anh Khang</div>
+              <div class="lookbook-item-location">Hà Đông, Hà Nội</div>
+            </div>
+          </div>
+          <div class="lookbook-item-ig">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor"/>
+            </svg>
+          </div>
+        </div>
+
+        <div class="lookbook-item reveal reveal-delay-3">
+          <img src="images/gallery-3.png" alt="Phòng khách tối giản với sofa da">
+          <div class="lookbook-item-overlay">
+            <div class="lookbook-item-info">
+              <div class="lookbook-item-name">Thanh Hằng</div>
+              <div class="lookbook-item-location">Thủ Đức, TP.HCM</div>
+            </div>
+          </div>
+          <div class="lookbook-item-ig">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor"/>
+            </svg>
+          </div>
+        </div>
+
+        <div class="lookbook-item reveal reveal-delay-2">
+          <img src="images/gallery-4.png" alt="Phòng khách bohemian với sofa xanh">
+          <div class="lookbook-item-overlay">
+            <div class="lookbook-item-info">
+              <div class="lookbook-item-name">Lan Anh</div>
+              <div class="lookbook-item-location">Bình Thạnh, TP.HCM</div>
+            </div>
+          </div>
+          <div class="lookbook-item-ig">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor"/>
+            </svg>
+          </div>
+        </div>
+
+        <div class="lookbook-item reveal reveal-delay-3">
+          <img src="images/gallery-5.png" alt="Phòng khách với sofa xanh navy">
+          <div class="lookbook-item-overlay">
+            <div class="lookbook-item-info">
+              <div class="lookbook-item-name">Gia đình chị Linh</div>
+              <div class="lookbook-item-location">Tây Hồ, Hà Nội</div>
+            </div>
+          </div>
+          <div class="lookbook-item-ig">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor"/>
+            </svg>
+          </div>
+        </div>
+
+        <div class="lookbook-item reveal reveal-delay-4">
+          <img src="images/gallery-6.png" alt="Căn hộ ấm cúng với sofa be">
+          <div class="lookbook-item-overlay">
+            <div class="lookbook-item-info">
+              <div class="lookbook-item-name">Tuấn & Mai</div>
+              <div class="lookbook-item-location">Quận 7, TP.HCM</div>
+            </div>
+          </div>
+          <div class="lookbook-item-ig">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta-section" id="cta">
+    <div class="container">
+      <div class="cta-inner reveal">
+        <span class="section-label">Sẵn sàng chưa?</span>
+        <h2 class="section-title">Bắt đầu hành trình tìm kiếm<br>sự thoải mái của bạn</h2>
+        <p class="section-subtitle">Đặt lịch tham quan showroom hoặc nhận tư vấn miễn phí từ đội ngũ thiết kế nội thất của CASA.</p>
+        <a href="#" class="cta-btn">
+          <span>Đặt lịch tư vấn miễn phí</span>
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+            <path d="M3 8h10m0 0L9 4m4 4L9 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer" id="contact">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">CASA</div>
+          <p>Thương hiệu sofa cao cấp Việt Nam. Thiết kế tối giản, chất liệu thượng hạng.</p>
+          <div class="footer-socials">
+            <a href="#" class="footer-social" aria-label="Facebook">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/>
+              </svg>
+            </a>
+            <a href="#" class="footer-social" aria-label="Instagram">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor"/>
+              </svg>
+            </a>
+            <a href="#" class="footer-social" aria-label="YouTube">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M22.54 6.42a2.78 2.78 0 00-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 00-1.94 2A29 29 0 001 11.75a29 29 0 00.46 5.33A2.78 2.78 0 003.4 19.1c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 001.94-2 29 29 0 00.46-5.25 29 29 0 00-.46-5.43z"/><polygon points="9.75,15.02 15.5,11.75 9.75,8.48" fill="#1A1714"/>
+              </svg>
+            </a>
+            <a href="#" class="footer-social" aria-label="TikTok">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.88-2.88 2.89 2.89 0 012.88-2.88c.28 0 .56.04.81.11v-3.5a6.37 6.37 0 00-.81-.05A6.34 6.34 0 003.15 15.2a6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.34-6.34V8.71a8.28 8.28 0 004.76 1.51V6.77a4.83 4.83 0 01-1-.08z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Sản phẩm</h4>
+          <ul>
+            <li><a href="#">Sofa góc L</a></li>
+            <li><a href="#">Sofa văng</a></li>
+            <li><a href="#">Sofa modular</a></li>
+            <li><a href="#">Ghế thư giãn</a></li>
+            <li><a href="#">Phụ kiện</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Hỗ trợ</h4>
+          <ul>
+            <li><a href="#">Hướng dẫn bảo quản</a></li>
+            <li><a href="#">Chính sách đổi trả</a></li>
+            <li><a href="#">Câu hỏi thường gặp</a></li>
+            <li><a href="#">Liên hệ</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Showroom</h4>
+          <ul>
+            <li><a href="#">123 Nguyễn Huệ, Q.1, TP.HCM</a></li>
+            <li><a href="#">45 Tràng Tiền, Hoàn Kiếm, Hà Nội</a></li>
+            <li><a href="#">Hotline: 1900 6868</a></li>
+            <li><a href="#">hello@casa.vn</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>© 2026 CASA. Tất cả quyền được bảo lưu.</span>
+        <div class="footer-bottom-links">
+          <a href="#">Chính sách bảo mật</a>
+          <a href="#">Điều khoản sử dụng</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
