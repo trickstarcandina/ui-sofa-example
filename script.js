@@ -1,5 +1,5 @@
 /**
- * CASA — Premium Sofa Website
+ * Kalix — Premium Sofa Website
  * Scroll animations, custom cursor, parallax, counter, and micro-interactions
  */
 
